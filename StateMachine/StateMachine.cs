@@ -1,12 +1,3 @@
-/* Base class for running a flat StateMachine.
- * Requires State, StateTransition, and Condition classes to operate.
- * 
- * Code adapted from "AI for Games" by Ian Millington (3rd Edition).
- * Original C++ pseudocode translated to C# and Unity by myself (Reed Spratt).
- * 
- * Added support for "AnyState" transitions.
- * Added support for StateMachine entry and exit behaviour.
-*/
 using System.Collections.Generic;
 using UnityEngine.Events;
 

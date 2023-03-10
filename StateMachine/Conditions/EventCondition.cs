@@ -1,7 +1,7 @@
 
 /// <summary>
 /// Condition triggered when the associated UnityEvent fires. 
-///Triggered status can be reset if the containing state isn't active.
+/// Triggered status can be reset if the containing state isn't active.
 /// </summary>
 public class EventCondition: Condition, IResetCondition
 {
@@ -28,7 +28,6 @@ public class EventCondition: Condition, IResetCondition
 
     public void SetTrigger()
     {
-        Debug.LogFormat("Event condition was triggered.");
         isTriggered = true;
     }
 }

@@ -6,8 +6,7 @@ using UnityEngine.Events;
 
 public class State
 {
-    public readonly int stateIdx;
-    public readonly string stateName;
+    private string stateName;
 
     private List<StateTransition> stateTransitions;
 
@@ -21,14 +20,15 @@ public class State
 
     public List<StateTransition> GetTransitions() => stateTransitions;
 
+    public StateName => stateName;
+    
     public void AddTransition(StateTransition newTransition)
     {
         stateTransitions.Add(newTransition);
     }
-    
-    public State(int stateIdx, string stateName, UnityEvent entryActions = null, UnityEvent regActions = null, UnityEvent exitActions = null)
+
+    public State(string stateName, UnityEvent entryActions = null, UnityEvent regActions = null, UnityEvent exitActions = null)
     {
-        this.stateIdx = stateIdx;
         this.stateName = stateName;
         this.regActions = regActions;
         this.entryActions = entryActions;

@@ -8,10 +8,13 @@ using UnityEngine.Events;
 /// </summary>
 public class StateTransition
 {
-    public Condition condition;
-    public State targetState;
-    public UnityEvent transitionActions;
+    private Condition condition;
+    private State targetState;
+    private UnityEvent transitionActions;
 
+    public State TargetState => targetState;
+    public UnityEvent TransitionActions => transitionActions;
+    
     public StateTransition (State targetState, UnityEvent transitionActions, Condition condition)
     {
         this.targetState = targetState;
@@ -28,6 +31,4 @@ public class StateTransition
         return condition.TestCondition();
     }
 
-    public State TargetState => targetState;
-    public UnityEvent TransitionActions => transitionActions;
 }

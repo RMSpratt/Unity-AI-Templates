@@ -1,3 +1,5 @@
 # Description of Repository
 
-This repository holds a collection of AI techniques for use in games as templates for use.
+This repository holds a collection of AI techniques as implemented in my Unity projects.
+
+Where available, specific techniques will hold a reference to the repository of the Unity game they appear in.
