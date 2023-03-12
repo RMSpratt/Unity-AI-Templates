@@ -7,8 +7,11 @@ Being a flat StateMachine, this implementation only allows for one level of stat
 StateMachines for character behaviour are well-suited for characters who need to repeat some behaviour 
 for an extended period of time, with accommodation for sudden changes in behaviour.
 
+### Credits
 This implementation was originally based on pseudocode provided by Ian Millington in "AI for Games".
 The implementation presented there was not language-specific, but likely geared towards C++.
+
+The code was entirely written by me.
 
 
 ## Entities
